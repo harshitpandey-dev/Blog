@@ -1,20 +1,19 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
+import {BrowserRouter} from 'react-router-dom';
+import {Provider} from 'react-redux';
+import {createStore, applyMiddleware} from 'redux'
+import promiseMiddleware from 'redux-promise'
+import ReduxThunk from 'redux-thunk';
+import Routes from './routes';
+import reducers from './reducers'
 
-const User = (props) => {
-   console.log(props)
-    return (
-        <div className="user_container">
-            <div className="avatar">
-            <img alt="avatar" src="/images/avatar.png"/>
-            </div>
-            <div className="nfo">
-                <div><span>Name:</span>&nbsp;{props.user.login.name}</div>
-                <div><span>Lastname:</span>&nbsp;{props.user.login.lastname}</div>
-                <div><span>Email:</span>&nbsp;{props.user.login.email}</div>
-            </div>
-            
-        </div>
-    );
-};
-
-export default User;
+const createStoreWithMiddleware = applyMiddleware(promiseMiddleware,ReduxThunk)(createStore)
+ReactDOM.render(
+  <Provider store={createStoreWithMiddleware(reducers)}>
+    <BrowserRouter>
+     <Routes/>
+    </BrowserRouter>
+  </Provider>,
+  document.getElementById('root')
+);
