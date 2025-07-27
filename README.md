@@ -1,39 +1,42 @@
-📝 Blog Application (MERN Stack)
+## 📝 Blog Application (MERN Stack)
+
 A full-stack web application that allows authenticated users to:
 
-✅ Register and sign in
+- ✅ Register and sign in
+- 📖 Read blogs posted by other users
+- ✍️ Create, edit, and delete their own blogs
+- ❤️ Like and interact with blogs
 
-📖 Read blogs posted by other users
+---
 
-✍️ Create, edit, and delete their own blogs
+## 🛠️ Tech Stack
 
-❤️ Like and interact with blogs
+### Frontend
 
-🛠️ Tech Stack
-Frontend
+- ⚛️ **React.js** – Builds a dynamic and responsive user interface
+- 🧠 **Redux** – Manages global state across components
 
-⚛️ React.js – Builds a dynamic and responsive user interface
+### Backend
 
-🧠 Redux – Manages global state across components
+- 🖥️ **Node.js** – Server-side runtime environment
+- 🚂 **Express.js** – Handles routing and API logic
 
-Backend
+### Database
 
-🖥️ Node.js – Runtime environment for server-side logic
+- 🍃 **MongoDB** – Stores user and blog data
 
-🚂 Express.js – Handles routing and API logic
+---
 
-Database
+## 📌 Features
 
-🍃 MongoDB – Stores user accounts and blog data
+- 🔐 Secure user authentication and authorization
+- 📝 Full CRUD operations for blog posts
+- ❤️ Like functionality to engage with blogs
+- 📱 Fully responsive and user-friendly interface
 
-📌 Features
-Secure authentication and authorization
+---
 
-CRUD functionality for blog posts
-
-Like system for user interaction
-
-Fully responsive and user-friendly UI
+## 📷 Screenshots
 
 ![home](./client/public/assets/home.png)
 
