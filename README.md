@@ -1,4 +1,4 @@
-## 📝 Blog Application (MERN Stack)
+# 📝 Blog Application (MERN Stack)
 
 A full-stack web application that allows authenticated users to:
 
@@ -15,11 +15,13 @@ A full-stack web application that allows authenticated users to:
 
 - ⚛️ **React.js** – Builds a dynamic and responsive user interface
 - 🧠 **Redux** – Manages global state across components
+- 🎨 **CSS** – Custom styling for all components
 
 ### Backend
 
 - 🖥️ **Node.js** – Server-side runtime environment
 - 🚂 **Express.js** – Handles routing and API logic
+- 🔒 **JWT** – Secure authentication mechanism
 
 ### Database
 
@@ -33,21 +35,90 @@ A full-stack web application that allows authenticated users to:
 - 📝 Full CRUD operations for blog posts
 - ❤️ Like functionality to engage with blogs
 - 📱 Fully responsive and user-friendly interface
+- 👤 User profiles with personal blog management
+- 🔍 Browse all published blogs in a central feed
+
+---
+
+## 🚀 Installation & Setup
+
+### Prerequisites
+
+- Node.js (v14+)
+- npm or yarn
+- MongoDB instance (local or Atlas)
+
+### Clone the repository
+
+```bash
+git clone https://github.com/Harshitpandey993/Blog.git
+cd Blog
+```
+
+### Frontend Setup
+
+```bash
+cd client
+npm install
+```
+
+### Backend Setup
+
+```bash
+cd server
+npm install
+```
+
+### Environment Configuration
+
+Create a `.env` file in the server directory with:
+
+```
+MONGODB_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret_key
+PORT=5000
+```
+
+---
+
+## 🏃‍♂️ Running the Application
+
+### Start the Backend Server
+
+```bash
+cd server
+npm start
+```
+
+### Start the Frontend Application
+
+```bash
+cd client
+npm start
+```
+
+The application will be available at `http://localhost:3000`
 
 ---
 
 ## 📷 Screenshots
 
-![home](./client/public/assets/home.png)
+![Home Page](./client/public/assets/home.png)
 
-![userpost](./client/public/assets/myBlog.png)
+![My Blogs Page](./client/public/assets/myBlog.png)
 
-![blogcontent](./client/public/assets/blog.png)
+![Blog Content](./client/public/assets/blog.png)
 
-![addblog](./client/public/assets/addBlog.png)
+![Add New Blog](./client/public/assets/addBlog.png)
 
-![edit](./client/public/assets/editBlog.png)
+![Edit Blog](./client/public/assets/editBlog.png)
 
-![adduser](./client/public/assets/addUser.png)
+![Add User](./client/public/assets/addUser.png)
 
-![user](./client/public/assets/user.png)
+![User Profile](./client/public/assets/user.png)
+
+---
+
+## 👥 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
